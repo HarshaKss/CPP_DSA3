@@ -24,6 +24,4 @@ int main() {
     } else {
         cout << "Key not found!" << endl;
     }
-
-    return 0;
 }
