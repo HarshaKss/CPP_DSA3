@@ -18,8 +18,8 @@ int main() {
     int index = findFirstOccurrence(arr, size, target);
 
     if (index != -1) {
-        cout << "The first occurrence of " << target << " is at index " << index << std::endl;
+        cout << "The first occurrence of " << target << " is at index " << index << endl;
     } else {
-        cout << "The element " << target << " is not found in the array." << std::endl;
+        cout << "The element " << target << " is not found in the array." << endl;
     }
 }
