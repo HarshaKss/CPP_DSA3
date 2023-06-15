@@ -1,10 +1,10 @@
 #include <iostream>
 using namespace std;
 
-int findFirstOccurrence(int arr[], int size, int target) {
-    for (int i = 0; i < size; i++) {
+int findLastOccurrence(int arr[], int size, int target) {
+    for (int i = size - 1; i >= 0; i--) {
         if (arr[i] == target) {
-            return i;
+            return i;  // Return the index if the element is found
         }
     }
     return -1;  // Return -1 if the element is not found
@@ -25,11 +25,10 @@ int main() {
     cout << "Enter the target element to find: ";
     cin >> target;
 
-
-    int index = findFirstOccurrence(arr, size, target);
+    int index = findLastOccurrence(arr, size, target);
 
     if (index != -1) {
-        cout << "The first occurrence of " << target << " is at index " << index << endl;
+        cout << "The last occurrence of " << target << " is at index " << index << endl;
     } else {
         cout << "The element " << target << " is not found in the array." << endl;
     }
